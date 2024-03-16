@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="home.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="nav-left">
+      <img src="catbox.png" alt="Logo" id="logo">
+      <input type="text" placeholder="Search your Friends" id="search"><i class="fa fa-search"></i>
+    </div>
+    <div class="nav-center">
+      <i class="fa fa-home" style="font-size: 40px;"></i>
+      <i class="fa fa-address-book"></i>
+      <i class="fa fa-users"></i>
+      <i class="fa fa-institution"></i>
+    </div>
+    <div class="nav-right">
+      <i class="fa fa-cog"></i>
+      <i class="fa fa-bell"></i>
+      <i class="fa fa-envelope"></i>
+      <div class="online">
+        <img src="images/profile-pic.png" id="profilePic" onclick="open_submenu()">
+      </div>
+
+      <!-- Sub Menu -->
+      <div class="settings">
+
+        <div id="toggle-dark" onclick="dark_on()">
+          <span></span>
+        </div>
+        <div class="add-post-write">
+          <img src="images/profile-pic.png">
+          <div class="text">
+            <p>Mark Peterson</p>
+            <a href="profile.html">See your profile</a>
+          </div>
+        </div>
+        <hr>
+        <div class="add-post-write">
+          <img src="images/feedback.png">
+          <div class="text">
+            <p>Give Feedback</p>
+            <a href="#">Help us to improve our services</a>
+          </div>
+        </div>
+        <hr>
+        <div class="setting-links">
+          <div>
+            <img src="images/setting.png" class="setting-icons">
+            <a href="#">Settings and Privacy <img src="images/arrow.png" width="10px"></a>
+          </div>
+          <div>
+            <img src="images/help.png" class="setting-icons">
+            <a href="#">Help and Support <img src="images/arrow.png" width="10px"></a>
+          </div>
+          <div>
+            <img src="images/display.png" class="setting-icons">
+            <a href="#">Display and Accessibility <img src="images/arrow.png" width="10px"></a>
+          </div>
+          <div>
+            <img src="images/logout.png" class="setting-icons">
+            <a href="#">Logout <img src="images/arrow.png" width="10px"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <hr>
+
+  <div class="container">
+
+
+    <!-- Left Sidebar  -->
+
+    <div class="left-sidebar">
+      <div class="imp-links">
+        <a href="profile.html" style="margin-top: 30px;"><img src="images/profile-pic.png" id="profilePic2">Nick
+          Thomsan</a>
+        <a href="#"><img src="images/news.png">Latest News</a>
+        <a href="#"><img src="images/friends.png">Friends</a>
+        <a href="#"><img src="images/group.png">Groups</a>
+        <a href="#"><img src="images/marketplace.png">Market Place</a>
+        <a href="#"><img src="images/watch.png">Watch</a>
+        <a href="#"><i class="fa fa-bookmark" style="font-size: 30px;color: #1876f2; margin-right: 15px;"></i>Saved</a>
+        <a href="#" style="color:#1876f2; font-size: 22px;">See more</a>
+      </div>
+      <div class="short-links">
+        <h3>Your Shortcuts</h3>
+        <a href="#"><img src="images/shortcut-1.png">Web Development</a>
+        <a href="#"><img src="images/shortcut-2.png">Web Designing</a>
+        <a href="#"><img src="images/shortcut-3.png">Full Stack Development</a>
+        <a href="#"><img src="images/shortcut-4.png">Digital Marketing</a>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+
+      <!-- Stories -->
+      <div class="story-section">
+        <div class="story story-1">
+          <img src="images/upload.png">
+          <p>Upload Story</p>
+        </div>
+        <div class="story story-2">
+          <img src="images/member-1.png">
+          <p>Alice sen</p>
+        </div>
+        <div class="story story-3">
+          <img src="images/member-2.png">
+          <p>Nick Jonas</p>
+        </div>
+        <div class="story story-4">
+          <img src="images/member-3.png">
+          <p>Marry Jan</p>
+        </div>
+        <div class="story story-5">
+          <img src="images/member-4.png">
+          <p>Nicolus Mike</p>
+        </div>
+      </div>
+
+      <!-- Posts -->
+      <div class="post-container">
+
+        <!-- Write Post -->
+        <div class="new-post">
+          <div class="add-post-write">
+            <img src="images/profile-pic.png" id="profilePic">
+            <input type="text" placeholder="What's in your mind, User?" id="new-post">
+          </div>
+          <hr style="width: 95%; margin: auto;">
+          <div class="add-post-links">
+            <a href="#"><img src="images/live-video.png">Go Live</a>
+            <a href="#"><img src="images/photo.png">Photo/Video</a>
+            <a href="#"><img src="images/feeling.png">Fellings/Activities</a>
+          </div>
+        </div>
+
+        <!-- Post-1 -->
+        <div class="post">
+          <div id="mm">...</div>
+          <div class="add-post-write">
+            <img src="images/member-5.png" id="profilePic">
+            <div class="text">
+              <h3>Mark Peterson</h3>
+              <span>14 April at 22:10</span>
+            </div>
+          </div>
+          <div class="text">
+            <p>Started a free web development course <strong>@the_learner01</strong> <a href="#">#coding #learntocode
+                #webdevelopment #freecourses #learningpoint #computerscience #html #css #javascript</a></p>
+          </div>
+          <img src="images/feed-image-1.png">
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="images/like-blue.png">500</div>
+              <div><img src="images/comments.png">120</div>
+              <div><img src="images/share.png">20</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Post-2 -->
+        <div class="post">
+          <div id="mm">...</div>
+          <div class="add-post-write">
+            <img src="images/member-6.png" id="profilePic">
+            <div class="text">
+              <h3>Alice Sen</h3>
+              <span>09 June at 12:10</span>
+            </div>
+          </div>
+          <div class="text">
+            <p>Started a free web development course <strong>@the_learner01</strong> <a href="#">#coding #learntocode
+                #webdevelopment #freecourses #learningpoint #computerscience #html #css #javascript</a></p>
+          </div>
+          <img src="images/feed-image-2.png">
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="images/like-blue.png">500</div>
+              <div><img src="images/comments.png">120</div>
+              <div><img src="images/share.png">20</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Post-3 -->
+        <div class="post">
+          <div id="mm">...</div>
+          <div class="add-post-write">
+            <img src="images/member-7.png" id="profilePic">
+            <div class="text">
+              <h3>Nick Jonas</h3>
+              <span>09 April at 14:10</span>
+            </div>
+          </div>
+          <div class="text">
+            <p>Started a free web development course <strong>@the_learner01</strong> <a href="#">#coding #learntocode
+                #webdevelopment #freecourses #learningpoint #computerscience #html #css #javascript</a></p>
+          </div>
+          <img src="images/feed-image-3.png">
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="images/like-blue.png">500</div>
+              <div><img src="images/comments.png">120</div>
+              <div><img src="images/share.png">20</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Post-4 -->
+        <div class="post">
+          <div id="mm">...</div>
+          <div class="add-post-write">
+            <img src="images/member-8.png" id="profilePic">
+            <div class="text">
+              <h3>Marry Jan</h3>
+              <span>15 June at 20:10</span>
+            </div>
+          </div>
+          <div class="text">
+            <p>Started a free web development course <strong>@the_learner01</strong> <a href="#">#coding #learntocode
+                #webdevelopment #freecourses #learningpoint #computerscience #html #css #javascript</a></p>
+          </div>
+          <img src="images/feed-image-4.png">
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="images/like-blue.png">500</div>
+              <div><img src="images/comments.png">120</div>
+              <div><img src="images/share.png">20</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Post-5 -->
+        <div class="post">
+          <div id="mm">...</div>
+          <div class="add-post-write">
+            <img src="images/member-9.png" id="profilePic">
+            <div class="text">
+              <h3>Jeff Bejos</h3>
+              <span>20 June at 11:10</span>
+            </div>
+          </div>
+          <div class="text">
+            <p>Started a free web development course <strong>@the_learner01</strong> <a href="#">#coding #learntocode
+                #webdevelopment #freecourses #learningpoint #computerscience #html #css #javascript</a></p>
+          </div>
+          <img src="images/feed-image-5.png">
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="images/like-blue.png">500</div>
+              <div><img src="images/comments.png">120</div>
+              <div><img src="images/share.png">20</div>
+            </div>
+          </div>
+        </div>
+        <button type="button" id="button">Load more</button>
+      </div>
+
+    </div>
+
+    <!-- Right Sidebar -->
+
+    <div class="right-sidebar">
+      <div class="sidebar-title">
+        <h4>Events</h4>
+        <a href="#">See All</a>
+      </div>
+      <div class="event">
+        <div class="left-event">
+          <h3>20</h3>
+          <span>April</span>
+        </div>
+        <div class="right-event">
+          <h4>Digital Marketing</h4>
+          <p><i class="fa fa-map-marker" style="margin-right: 2px;"></i>San Fransisco</p>
+          <a href="#">More Info</a>
+        </div>
+      </div>
+      <div class="event">
+        <div class="left-event">
+          <h3>24</h3>
+          <span>April</span>
+        </div>
+        <div class="right-event">
+          <h4>Web Development</h4>
+          <p><i class="fa fa-map-marker" style="margin-right: 2px;"></i>City Centre</p>
+          <a href="#">More Info</a>
+        </div>
+      </div>
+      <div class="event">
+        <div class="left-event">
+          <h3>02</h3>
+          <span>May</span>
+        </div>
+        <div class="right-event">
+          <h4>Social Media</h4>
+          <p><i class="fa fa-map-marker" style="margin-right: 2px;"></i>IT Hub</p>
+          <a href="#">More Info</a>
+        </div>
+      </div>
+      <div class="sidebar-title">
+        <h4>Advertisements</h4>
+        <a href="#">Close</a>
+      </div>
+      <img src="images/advertisement.png" class="sidebar-ads">
+      <hr>
+      <div class="sidebar-title">
+        <h4>Users Active</h4>
+        <a href="#">Hide</a>
+      </div>
+      <div class="active-users">
+        <div class="online">
+          <img src="images/member-1.png">
+          <p>Alice sen</p>
+        </div>
+        <div class="online">
+          <img src="images/member-2.png">
+          <p>Nick Jonas</p>
+        </div>
+        <div class="online">
+          <img src="images/member-3.png">
+          <p>Mark Joe</p>
+        </div>
+        <div class="online">
+          <img src="images/member-4.png">
+          <p>Nicolus Mike</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>Copyright &copy; 2021: Sastagram.com</p>
+  </div>
+
+  <script>
+    var submenu=document.querySelector(".settings")
+    var toggleDark=document.querySelector("#toggle-dark")
+   function open_submenu(){
+    submenu.classList.toggle("settings-sub");
+   }
+   function dark_on(){
+    toggleDark.classList.toggle("toggle-dark-on");
+    document.body.classList.toggle("dark-on")
+
+    if(localStorage.getItem("theme")=="light"){
+      localStorage.setItem("theme","dark");
+    }
+    else{
+      localStorage.setItem("theme","light"); 
+    }
+   }
+
+   if(localStorage.getItem("theme")=="light"){
+    toggleDark.classList.remove("toggle-dark-on");
+    document.body.classList.remove("dark-on");
+   }
+   else if(localStorage.getItem("theme")=="dark"){
+    toggleDark.classList.add("toggle-dark-on");
+    document.body.classList.add("dark-on");
+   }
+   else{
+    localStorage.setItem("theme","light");
+   }
+  </script>
+</body>
+
+</html>
